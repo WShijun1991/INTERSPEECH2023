@@ -1,0 +1,604 @@
+<html>
+  <head>
+    <style>
+      .banner {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100px;
+        background-color: lightgreen;
+      }
+      .h1-title {
+        font-size: 48px;
+        color: black;
+      }
+      .h1-subtitle {
+        font-size: 35px;
+        color: black;
+        text-align: center;
+      }
+      .emphasized { font-style: italic; }
+      .intro {
+        margin-top: 30px;
+        margin-bottom: 30px;
+        margin-right: 10%;
+        margin-left: 10%;
+      }
+      Abstract {
+        justify-content: center;
+        font-size: 30px;
+        margin-top: 10px;
+      }
+      Task {
+        justify-content: left;
+        font-size: 30px;
+        margin-top: 10px;
+      }
+      .table-container {
+        width: 80%;
+        margin: 20px auto;
+        text-align: left;
+      }
+      table {
+        border-collapse: collapse;
+        width: 100%;
+      }
+      th, td {
+        border: 0px solid lightgrey;
+        padding: 8px;
+        text-align: left;
+        vertical-align: top;
+      }
+      .reference-td {
+          border-left: 1px solid lightgrey;
+          border-top: 1px solid lightgrey;
+      }
+      .text-td {
+          border-right: 1px solid lightgrey;
+          border-top: 1px solid lightgrey;
+      }
+      .baseline-td {
+          border-left: 1px solid lightgrey;
+          border-bottom: 1px solid lightgrey;
+      }
+      .ours-td {
+          border-right: 1px solid lightgrey;
+          border-bottom: 1px solid lightgrey;
+      }
+      th:first-child {
+        text-align: center;
+      }
+    .h2-table {
+        text-align: left;
+        font-weight: normal;
+      }
+    .bolded { font-weight: bold; }
+    </style>
+  </head>
+  <body>
+    <div class="banner">
+      <h1 class="h1-title">Demo Page</h1>
+
+    </div>
+
+    <div class="intro">
+    <Abstract> This is the demo page for  <span class="emphasized">Learning Emotional Representations from Imbalanced Speech Data for Speech Emotion Recognition and Emotional Text-to-Speech</span></Abstract>
+    </div>
+
+    <h1 class="h1-subtitle">Emotion Expressiveness Test</h1>
+
+    
+
+    <div class="table-container">
+      <Task> The models should mimic the speaking style of the reference, and express proper emotions. All models are trained from an <span style="color:red">imbalanced</span> dataset, where each speaker only has 10 samples for each emotion class except Neutral class.</Task>
+      <h2 class="h2-table"> <span class="bolded">Baseline</span>: Lee, Younggun and Taesu Kim. "Robust and Fine-grained Prosody Control of End-to-end Speech Synthesis." ICASSP 2019.</h2>
+      <table>
+        <tr>
+          <th colspan="2"><font size="5">Emotion: Surprised</font></th>
+        </tr>
+
+        <tr>
+          <td class="reference-td">
+            <font size="5">Reference:</font>
+            <p></p>
+            <audio controls src=files/surprised1/ref.wav></audio>
+          </td>
+
+          <td class="text-td">
+            <font size="5">Text:</font>
+            <p></p>
+            <font size="5">What would they do at the end of the year?</font>
+          </td>
+        </tr>
+
+
+        <tr>
+          <td class="baseline-td">
+            <font size="5">Baseline:</font>
+            <p></p>
+            <audio controls src=files/surprised1/baseline.wav></audio>
+          </td>
+          <td class="ours-td">
+            <font size="5">Ours:</font>
+            <p></p>
+            <audio controls src=files/surprised1/ours.wav></audio>
+          </td>
+
+        </tr>
+
+
+        <tr>
+          <td class="reference-td">
+            <font size="5">Reference:</font>
+            <p></p>
+            <audio controls src=files/surprised2/ref.wav></audio>
+          </td>
+
+          <td class="text-td">
+            <font size="5">Text:</font>
+            <p></p>
+            <font size="5">How I hate this foul pool! </font>
+          </td>
+        </tr>
+
+
+        <tr>
+          <td class="baseline-td">
+            <font size="5">Baseline:</font>
+            <p></p>
+            <audio controls src=files/surprised2/baseline.wav></audio>
+          </td>
+          <td class="ours-td">
+            <font size="5">Ours:</font>
+            <p></p>
+            <audio controls src=files/surprised2/ours.wav></audio>
+          </td>
+        </tr>
+
+        <tr>
+          <td class="reference-td">
+            <font size="5">Reference:</font>
+            <p></p>
+            <audio controls src=files/surprised3/ref.wav></audio>
+          </td>
+
+          <td class="text-td">
+            <font size="5">Text:</font>
+            <p></p>
+            <font size="5">Over them swooped the eagles. </font>
+          </td>
+        </tr>
+
+
+        <tr>
+          <td class="baseline-td">
+            <font size="5">Baseline:</font>
+            <p></p>
+            <audio controls src=files/surprised3/baseline.wav></audio>
+          </td>
+          <td class="ours-td">
+            <font size="5">Ours:</font>
+            <p></p>
+            <audio controls src=files/surprised3/ours.wav></audio>
+          </td>
+        </tr>
+
+        <tr>
+          <td class="reference-td">
+            <font size="5">Reference:</font>
+            <p></p>
+            <audio controls src=files/surprised4/ref.wav></audio>
+          </td>
+
+          <td class="text-td">
+            <font size="5">Text:</font>
+            <p></p>
+            <font size="5">If they mother knew it. </font>
+          </td>
+        </tr>
+
+
+        <tr>
+          <td class="baseline-td">
+            <font size="5">Baseline:</font>
+            <p></p>
+            <audio controls src=files/surprised4/baseline.wav></audio>
+          </td>
+          <td class="ours-td">
+            <font size="5">Ours:</font>
+            <p></p>
+            <audio controls src=files/surprised4/ours.wav></audio>
+          </td>
+        </tr>
+
+        <tr>
+        
+          <th colspan="2"><font size="5">
+          </br>
+          Emotion: Angry
+          </font></th>
+          
+        </tr>
+
+        <tr>
+          <td class="reference-td">
+            <font size="5">Reference:</font>
+            <p></p>
+            <audio controls src=files/angry1/ref.wav></audio>
+          </td>
+
+          <td class="text-td">
+            <font size="5">Text:</font>
+            <p></p>
+            <font size="5">This turn goes to the hill.</font>
+          </td>
+        </tr>
+
+
+        <tr>
+          <td class="baseline-td">
+            <font size="5">Baseline:</font>
+            <p></p>
+            <audio controls src=files/angry1/baseline.wav></audio>
+          </td>
+          <td class="ours-td">
+            <font size="5">Ours:</font>
+            <p></p>
+            <audio controls src=files/angry1/ours.wav></audio>
+          </td>
+
+        <tr>
+          <td class="reference-td">
+            <font size="5">Reference:</font>
+            <p></p>
+            <audio controls src=files/angry2/ref.wav></audio>
+          </td>
+
+          <td class="text-td">
+            <font size="5">Text:</font>
+            <p></p>
+            <font size="5">These words behind the ears is nonsense.</font>
+          </td>
+        </tr>
+
+
+        <tr>
+          <td class="baseline-td">
+            <font size="5">Baseline:</font>
+            <p></p>
+            <audio controls src=files/angry2/baseline.wav></audio>
+          </td>
+          <td class="ours-td">
+            <font size="5">Ours:</font>
+            <p></p>
+            <audio controls src=files/angry2/ours.wav></audio>
+          </td>
+        </tr>
+
+
+        <tr>
+          <td class="reference-td">
+            <font size="5">Reference:</font>
+            <p></p>
+            <audio controls src=files/angry3/ref.wav></audio>
+          </td>
+
+          <td class="text-td">
+            <font size="5">Text:</font>
+            <p></p>
+            <font size="5">Pick, pick, pick!</font>
+          </td>
+        </tr>
+
+
+        <tr>
+          <td class="baseline-td">
+            <font size="5">Baseline:</font>
+            <p></p>
+            <audio controls src=files/angry3/baseline.wav></audio>
+          </td>
+          <td class="ours-td">
+            <font size="5">Ours:</font>
+            <p></p>
+            <audio controls src=files/angry3/ours.wav></audio>
+          </td>
+        </tr>
+
+
+        <tr>
+          <td class="reference-td">
+            <font size="5">Reference:</font>
+            <p></p>
+            <audio controls src=files/angry4/ref.wav></audio>
+          </td>
+
+          <td class="text-td">
+            <font size="5">Text:</font>
+            <p></p>
+            <font size="5">He could not help doing so.</font>
+          </td>
+        </tr>
+
+
+        <tr>
+          <td class="baseline-td">
+            <font size="5">Baseline:</font>
+            <p></p>
+            <audio controls src=files/angry4/baseline.wav></audio>
+          </td>
+          <td class="ours-td">
+            <font size="5">Ours:</font>
+            <p></p>
+            <audio controls src=files/angry4/ours.wav></audio>
+          </td>
+        </tr>
+
+
+
+
+
+
+        <tr>
+        
+          <th colspan="2"><font size="5">
+          </br>
+          Emotion: Happy
+          </font></th>
+          
+        </tr>
+
+        <tr>
+          <td class="reference-td">
+            <font size="5">Reference:</font>
+            <p></p>
+            <audio controls src=files/happy1/ref.wav></audio>
+          </td>
+
+          <td class="text-td">
+            <font size="5">Text:</font>
+            <p></p>
+            <font size="5">Enough, you a foolish chatter.
+</font>
+          </td>
+        </tr>
+
+
+        <tr>
+          <td class="baseline-td">
+            <font size="5">Baseline:</font>
+            <p></p>
+            <audio controls src=files/happy1/baseline.wav></audio>
+          </td>
+          <td class="ours-td">
+            <font size="5">Ours:</font>
+            <p></p>
+            <audio controls src=files/happy1/ours.wav></audio>
+          </td>
+
+        <tr>
+          <td class="reference-td">
+            <font size="5">Reference:</font>
+            <p></p>
+            <audio controls src=files/happy2/ref.wav></audio>
+          </td>
+
+          <td class="text-td">
+            <font size="5">Text:</font>
+            <p></p>
+            <font size="5">He told me that I ought to change.</font>
+          </td>
+        </tr>
+
+
+        <tr>
+          <td class="baseline-td">
+            <font size="5">Baseline:</font>
+            <p></p>
+            <audio controls src=files/happy2/baseline.wav></audio>
+          </td>
+          <td class="ours-td">
+            <font size="5">Ours:</font>
+            <p></p>
+            <audio controls src=files/happy2/ours.wav></audio>
+          </td>
+        </tr>
+
+
+        <tr>
+          <td class="reference-td">
+            <font size="5">Reference:</font>
+            <p></p>
+            <audio controls src=files/happy3/ref.wav></audio>
+          </td>
+
+          <td class="text-td">
+            <font size="5">Text:</font>
+            <p></p>
+            <font size="5">Andy, what's the gyre and to gimble?</font>
+          </td>
+        </tr>
+
+
+        <tr>
+          <td class="baseline-td">
+            <font size="5">Baseline:</font>
+            <p></p>
+            <audio controls src=files/happy3/baseline.wav></audio>
+          </td>
+          <td class="ours-td">
+            <font size="5">Ours:</font>
+            <p></p>
+            <audio controls src=files/happy3/ours.wav></audio>
+          </td>
+        </tr>
+
+
+        <tr>
+          <td class="reference-td">
+            <font size="5">Reference:</font>
+            <p></p>
+            <audio controls src=files/happy4/ref.wav></audio>
+          </td>
+
+          <td class="text-td">
+            <font size="5">Text:</font>
+            <p></p>
+            <font size="5">It is much farther.</font>
+          </td>
+        </tr>
+
+
+        <tr>
+          <td class="baseline-td">
+            <font size="5">Baseline:</font>
+            <p></p>
+            <audio controls src=files/happy4/baseline.wav></audio>
+          </td>
+          <td class="ours-td">
+            <font size="5">Ours:</font>
+            <p></p>
+            <audio controls src=files/happy4/ours.wav></audio>
+          </td>
+        </tr>
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <tr>
+        
+          <th colspan="2"><font size="5">
+          </br>
+          Emotion: Sad
+          </font></th>
+          
+        </tr>
+
+        <tr>
+          <td class="reference-td">
+            <font size="5">Reference:</font>
+            <p></p>
+            <audio controls src=files/sad1/ref.wav></audio>
+          </td>
+
+          <td class="text-td">
+            <font size="5">Text:</font>
+            <p></p>
+            <font size="5">In my opinion, that is a good idea.</font>
+          </td>
+        </tr>
+
+
+        <tr>
+          <td class="baseline-td">
+            <font size="5">Baseline:</font>
+            <p></p>
+            <audio controls src=files/sad1/baseline.wav></audio>
+          </td>
+          <td class="ours-td">
+            <font size="5">Ours:</font>
+            <p></p>
+            <audio controls src=files/sad1/ours.wav></audio>
+          </td>
+
+        <tr>
+          <td class="reference-td">
+            <font size="5">Reference:</font>
+            <p></p>
+            <audio controls src=files/sad2/ref.wav></audio>
+          </td>
+
+          <td class="text-td">
+            <font size="5">Text:</font>
+            <p></p>
+            <font size="5">As rich as peter's son in law.</font>
+          </td>
+        </tr>
+
+
+        <tr>
+          <td class="baseline-td">
+            <font size="5">Baseline:</font>
+            <p></p>
+            <audio controls src=files/sad2/baseline.wav></audio>
+          </td>
+          <td class="ours-td">
+            <font size="5">Ours:</font>
+            <p></p>
+            <audio controls src=files/sad2/ours.wav></audio>
+          </td>
+        </tr>
+
+
+        <tr>
+          <td class="reference-td">
+            <font size="5">Reference:</font>
+            <p></p>
+            <audio controls src=files/sad3/ref.wav></audio>
+          </td>
+
+          <td class="text-td">
+            <font size="5">Text:</font>
+            <p></p>
+            <font size="5">No, thank you.</font>
+          </td>
+        </tr>
+
+
+        <tr>
+          <td class="baseline-td">
+            <font size="5">Baseline:</font>
+            <p></p>
+            <audio controls src=files/sad3/baseline.wav></audio>
+          </td>
+          <td class="ours-td">
+            <font size="5">Ours:</font>
+            <p></p>
+            <audio controls src=files/sad3/ours.wav></audio>
+          </td>
+        </tr>
+
+
+        <tr>
+          <td class="reference-td">
+            <font size="5">Reference:</font>
+            <p></p>
+            <audio controls src=files/sad4/ref.wav></audio>
+          </td>
+
+          <td class="text-td">
+            <font size="5">Text:</font>
+            <p></p>
+            <font size="5">That sounds good.</font>
+          </td>
+        </tr>
+
+
+        <tr>
+          <td class="baseline-td">
+            <font size="5">Baseline:</font>
+            <p></p>
+            <audio controls src=files/sad4/baseline.wav></audio>
+          </td>
+          <td class="ours-td">
+            <font size="5">Ours:</font>
+            <p></p>
+            <audio controls src=files/sad4/ours.wav></audio>
+          </td>
+        </tr>
+      </table>
+
+    </div>
+
+
+
+  </body>
+</html>
